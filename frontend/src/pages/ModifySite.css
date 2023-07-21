@@ -1,0 +1,41 @@
+.modify-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.modify-page h1 {
+  color: #071a3d;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.row-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.modif-btn {
+  background-color: transparent;
+  border: none;
+}
+.small-icon {
+  max-height: 24px;
+  max-width: 24px;
+}
+
+@media screen and (min-width: 564px) {
+  .form-col {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,36 @@
+.welcome {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.welcome h1 {
+  color: #071a3d;
+}
+
+.welcome p {
+  text-align: left;
+}
+
+.text {
+  line-height: 1.75rem;
+}
+
+.search h2 {
+  padding-bottom: 2rem;
+  margin: 0;
+  color: #071a3d;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .full-text {
+    width: 50%;
+  }
+}

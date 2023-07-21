@@ -34,6 +34,21 @@ const ItemManager = require("./ItemManager");
 models.item = new ItemManager();
 models.item.setDatabase(pool);
 
+const SiteManager = require("./SiteManager");
+
+models.site = new SiteManager();
+models.site.setDatabase(pool);
+
+const ActivityManager = require("./ActivityManager");
+
+models.activity = new ActivityManager();
+models.activity.setDatabase(pool);
+
+const AdminManager = require("./AdminManager");
+
+models.admin = new AdminManager();
+models.admin.setDatabase(pool);
+
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 

@@ -1,36 +1,26 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import Dropdown from "../components/Dropdown";
+import "./Home.css";
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div className="welcome">
+      <h1>Bienvenue</h1>
+      <div className="full-text">
+        <p className="text">
+          En tant que nouvel arrivant dans le domaine de l'aéronautique
+          Toulousain, vous serez amené, tout au long de votre carrière, à
+          travailler sur divers sites et dans divers secteurs.
+        </p>
+        <p className="text">
+          Ce site à pour fonction de vous aidez en recensant autour et dans la
+          ville de Toulouse, les sites du géant Aéronautique et fleuron de
+          l'Industrie Française.
+        </p>
+      </div>
+      <div className="search">
+        <h2>Recherchez un site:</h2>
+        <Dropdown />
+      </div>
+    </div>
   );
 }

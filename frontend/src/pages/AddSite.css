@@ -1,0 +1,44 @@
+.add-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.add-site h1 {
+  color: #071a3d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  width: 80%;
+  max-width: 350px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row label {
+  padding-bottom: 0.5rem;
+}
+
+.row input {
+  padding: 0.3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 564px) {
+  .form {
+    width: 50%;
+    max-width: 350px;
+  }
+}

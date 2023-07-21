@@ -1,0 +1,32 @@
+.modify-site-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row label {
+  padding-bottom: 0.5rem;
+}
+
+.row input {
+  padding: 0.3rem;
+  width: 100%;
+  box-sizing: border-box;
+}

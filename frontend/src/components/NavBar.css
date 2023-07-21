@@ -1,0 +1,31 @@
+.navbar {
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: solid darkgrey 2px;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px darkgrey;
+  background-color: white;
+}
+.navbar-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  color: #071a3d;
+  margin: 0;
+}
+
+.title h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.icon {
+  max-height: 64px;
+  max-width: 64px;
+}

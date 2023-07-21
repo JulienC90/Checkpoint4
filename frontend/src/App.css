@@ -13,7 +13,12 @@ code {
 }
 
 .App {
+  height: 100vh;
   text-align: center;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .App-logo {

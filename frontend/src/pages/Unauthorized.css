@@ -1,0 +1,12 @@
+.unauthorized-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.unauthorized {
+  width: 80%;
+  color: #071a3d;
+}
