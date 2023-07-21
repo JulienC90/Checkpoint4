@@ -1,14 +1,14 @@
 {
-  "name": "template-fullstack",
+  "name": "checkpoint4",
   "version": "3.0.2",
   "description": "project template for the React-Express-MySQL cursus in Wild Code School",
-  "homepage": "https://github.com/wildcodeschool/js-template-fullstack#readme",
+  "homepage": "https://github.com/JulienC90/Checkpoint4#readme",
   "bugs": {
-    "url": "https://github.com/wildcodeschool/js-template-fullstack/issues"
+    "url": "https://github.com/JulienC90/Checkpoint4/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wildcodeschool/js-template-fullstack.git"
+    "url": "git+https://github.com/JulienC90/Checkpoint4"
   },
   "config": {
     "cli": "npm"
@@ -29,9 +29,5 @@
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
     "husky": "^8.0.3"
-  },
-  "dependencies": {
-    "argon2": "^0.30.3",
-    "jsonwebtoken": "^9.0.1"
   }
 }
