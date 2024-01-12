@@ -33,6 +33,29 @@
   justify-content: space-between;
 }
 
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activities-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.activity-item {
+  padding: 0.6rem;
+  background-color: #071a3d;
+  color: white;
+  width: 5rem;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 #address {
   text-align: right;
 }

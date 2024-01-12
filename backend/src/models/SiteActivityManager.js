@@ -12,6 +12,17 @@ class SiteActivityManager extends AbstractManager {
     );
   }
 
+  seeActivities(id) {
+    return this.database.query(
+      `select ${this.table}.site_id, activity.activity
+      from ${this.table}
+      inner join activity on ${this.table}.activity_id = activity.id
+      where ${this.table}.site_id = ?
+      `,
+      [id]
+    );
+  }
+
   insert(body) {
     const { site_id, activity_id } = body;
     return this.database.query(

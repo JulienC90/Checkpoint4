@@ -7,11 +7,22 @@ export default function Sites() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [siteData, setSiteData] = useState();
+  const [siteActivities, setSiteActivities] = useState([]);
 
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/sites/${id}`)
       .then((response) => setSiteData(response.data))
+      .catch((error) => console.error("Error fetching option data:", error));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_BACKEND_URL}/sites/${id}/activities`)
+      .then((response) => {
+        console.info("Site activities: ", response.data[0]);
+        setSiteActivities(response.data[0]);
+      })
       .catch((error) => console.error("Error fetching option data:", error));
   }, []);
 
@@ -40,6 +51,18 @@ export default function Sites() {
             <u>Adresse:</u>
           </p>
           <p id="address">{siteData.address}</p>
+        </div>
+        <div className="activities">
+          <p>
+            <u>Métiers :</u>
+          </p>
+          <div className="activities-row">
+            {siteActivities.map((activity) => (
+              <div key={activity.id} className="activity-item">
+                {activity.activity}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {siteData.maplink !== "" ? (

@@ -40,8 +40,8 @@ router.get("/activities/:id", activityControllers.read);
 
 // -- -- SITE ACTIVITIES ROUTES -- --
 // -- GET --
-router.get("/site-activity", siteActivityControllers.browse);
-router.get("/site-activity/:id", siteActivityControllers.read);
+router.get("/site-activities", siteActivityControllers.browse);
+router.get("/sites/:id/activities", siteActivityControllers.read);
 
 // -- -- ADMIN ROUTES -- --
 // -- POST --

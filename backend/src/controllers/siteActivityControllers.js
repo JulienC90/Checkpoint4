@@ -15,7 +15,7 @@ const browse = (req, res) => {
 const read = (req, res) => {
   const id = parseInt(req.params.id, 10);
   models.siteActivity
-    .scope(id)
+    .seeActivities(id)
     .then(([rows]) => {
       if (rows.length === 0) {
         res.sendStatus(404);
