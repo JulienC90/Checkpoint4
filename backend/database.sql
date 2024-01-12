@@ -84,7 +84,7 @@ VALUES
   (
     "Saint-Eloi Historique",
     1921,
-    "57 chemin du Sang de Serp, 31200 Toulouse",
+    "57 ch. du Sang de Serp, 31200 Toulouse",
     "https://www.google.fr/maps/place/57+Chem.+du+Sang+de+Serp,+31200+Toulouse/@43.6145813,1.4260571,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebb4751d0114d:0x8205a48119dd8a3d!8m2!3d43.6145774!4d1.428632!16s%2Fg%2F11c2h8tzp8?entry=ttu"
 );
 
@@ -225,6 +225,195 @@ VALUES
   (
     "Lycée"
 );
+
+INSERT INTO
+  activity (
+    activity
+  )
+VALUES
+  (
+    "R & D"
+);
+
+-- -----------------------------------------------------
+-- Table `site_has_activity`
+-- -----------------------------------------------------
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    1,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    1,
+    3
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    1,
+    4
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    1,
+    5
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    2,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    2,
+    6
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    3,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    3,
+    2
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    4,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    5,
+    1
+  );
+
+  INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    5,
+    2
+  );
+
+  INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    6,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    6,
+    2
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    7,
+    1
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    7,
+    2
+  );
+
+INSERT INTO
+  site_has_activity (
+    site_id,
+    activity_id
+  )
+VALUES
+  (
+    7,
+    6
+  );
 
 -- -----------------------------------------------------
 -- Table `admin`

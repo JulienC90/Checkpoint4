@@ -17,6 +17,7 @@ const itemControllers = require("./controllers/itemControllers");
 const siteControllers = require("./controllers/siteControllers");
 const activityControllers = require("./controllers/activityControllers");
 const adminControllers = require("./controllers/adminControllers");
+const siteActivityControllers = require("./controllers/siteActivityControllers");
 
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
@@ -36,6 +37,11 @@ router.get("/sites/:id", siteControllers.read);
 // -- GET --
 router.get("/activities", activityControllers.browse);
 router.get("/activities/:id", activityControllers.read);
+
+// -- -- SITE ACTIVITIES ROUTES -- --
+// -- GET --
+router.get("/site-activity", siteActivityControllers.browse);
+router.get("/site-activity/:id", siteActivityControllers.read);
 
 // -- -- ADMIN ROUTES -- --
 // -- POST --
@@ -65,6 +71,16 @@ router.put("/activities/:id", activityControllers.edit);
 
 // -- DELETE --
 router.delete("/activities/:id", activityControllers.destroy);
+
+// -- -- SITE ACTIVITIES ROUTES -- --
+// -- POST --
+router.post("/site-activity", siteActivityControllers.add);
+
+// -- DELETE --
+router.delete(
+  "/site-activity/:siteId/:activityId",
+  siteActivityControllers.destroy
+);
 
 // -- -- ADMIN ROUTES -- --
 // -- GET --
