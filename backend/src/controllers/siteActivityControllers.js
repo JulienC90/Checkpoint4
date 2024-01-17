@@ -33,7 +33,7 @@ const add = (req, res) => {
   models.siteActivity
     .insert(req.body)
     .then(([result]) => {
-      res.location(`/site-activity/${result.insertId}`).sendStatus(201);
+      res.location(`/sites/${result.insertId}/activities`).sendStatus(201);
     })
     .catch((err) => {
       console.error(err);

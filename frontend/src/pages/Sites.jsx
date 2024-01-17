@@ -20,7 +20,6 @@ export default function Sites() {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/sites/${id}/activities`)
       .then((response) => {
-        console.info("Site activities: ", response.data[0]);
         setSiteActivities(response.data[0]);
       })
       .catch((error) => console.error("Error fetching option data:", error));

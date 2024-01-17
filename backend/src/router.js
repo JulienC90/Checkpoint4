@@ -74,7 +74,7 @@ router.delete("/activities/:id", activityControllers.destroy);
 
 // -- -- SITE ACTIVITIES ROUTES -- --
 // -- POST --
-router.post("/site-activity", siteActivityControllers.add);
+router.post("/sites/:id/activities", siteActivityControllers.add);
 
 // -- DELETE --
 router.delete(

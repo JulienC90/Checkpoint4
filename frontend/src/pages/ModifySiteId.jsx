@@ -40,7 +40,7 @@ export default function ModifySiteId() {
       .then(() => {
         // eslint-disable-next-line no-alert
         alert("Site modifié");
-        navigate("/sites/modify");
+        navigate("/admin/sites/modify");
       })
       .catch((error) => {
         console.error("Error modifying site:", error);
@@ -103,7 +103,7 @@ export default function ModifySiteId() {
           <button
             type="button"
             className="back"
-            onClick={() => navigate("/sites/modify")}
+            onClick={() => navigate("/admin/sites/modify")}
           >
             Retour
           </button>

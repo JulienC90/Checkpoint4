@@ -11,29 +11,34 @@ export default function AddSite() {
   const [address, setAddress] = useState("");
   const [maplink, setMaplink] = useState("");
   const navigate = useNavigate();
+
   const handleSubmitAddSite = (e) => {
     e.preventDefault();
-    const site = {
-      name,
-      year,
-      address,
-      maplink,
-    };
     axios
-      .post(`${import.meta.env.VITE_BACKEND_URL}/sites`, site, {
-        headers: {
-          Authorization: `Bearer ${userToken}`,
+      .post(
+        `${import.meta.env.VITE_BACKEND_URL}/sites`,
+        {
+          name,
+          year,
+          address,
+          maplink,
         },
-      })
+        {
+          headers: {
+            Authorization: `Bearer ${userToken}`,
+          },
+        }
+      )
       .then(() => {
         // eslint-disable-next-line no-alert
-        alert("Site ajouté");
-        navigate("/admin");
+        alert("Site ajouté avec succès !");
+        navigate("/admin/sites");
       })
       .catch((error) => {
-        console.error("Error fetching options:", error);
+        console.error("Error adding sites:", error);
       });
   };
+
   return (
     <div className="add-site">
       <h1>Ajouter un site</h1>
@@ -74,7 +79,7 @@ export default function AddSite() {
           />
         </div>
         <div className="row">
-          <label htmlFor="maplink">Lien Google Maps</label>
+          <label htmlFor="maplink">Lien Google Maps:</label>
           <input
             className="input"
             id="maplink"

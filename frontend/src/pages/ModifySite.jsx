@@ -25,7 +25,7 @@ export default function ModifySite() {
           <div className="row-element">
             <p key={site.id}>{site.name}</p>
             <div>
-              <Link to={`/sites/modify/${site.id}`}>
+              <Link to={`/admin/sites/modify/${site.id}`}>
                 <img src={Modif} alt="Modif" className="small-icon" />
               </Link>
             </div>

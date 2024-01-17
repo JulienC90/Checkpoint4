@@ -1,0 +1,54 @@
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 2rem;
+  }
+  
+  .admin-page h1, h3 {
+    color: #071a3d;
+  }
+  
+  .btn-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    background-color: #071a3d;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .portal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 8px;
+    color: #071a3d;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    height: 40px;
+    text-decoration: none;
+    border: solid 1px #071a3d;
+  }
+  

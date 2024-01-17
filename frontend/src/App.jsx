@@ -8,10 +8,15 @@ import Sites from "./pages/Sites";
 import Login from "./pages/Login";
 import Unauthorized from "./pages/Unauthorized";
 import Admin from "./pages/Admin";
+import AdminSite from "./pages/AdminSite";
+import AdminActivity from "./pages/AdminActivity";
 import AddSite from "./pages/AddSite";
 import ModifySite from "./pages/ModifySite";
 import ModifySiteId from "./pages/ModifySiteId";
 import DeleteSite from "./pages/DeleteSite";
+import CreateActivity from "./pages/CreateActivity";
+import AddActivity from "./pages/AddActivity";
+import DeleteActivity from "./pages/DeleteActivity";
 
 import "./App.css";
 
@@ -52,20 +57,40 @@ function App() {
             element={userToken ? <Admin /> : <Unauthorized />}
           />
           <Route
-            path="/sites/add"
+            path="/admin/sites"
+            element={userToken ? <AdminSite /> : <Unauthorized />}
+          />
+          <Route
+            path="/admin/activities"
+            element={userToken ? <AdminActivity /> : <Unauthorized />}
+          />
+          <Route
+            path="/admin/sites/add"
             element={userToken ? <AddSite /> : <Unauthorized />}
           />
           <Route
-            path="/sites/modify"
+            path="/admin/sites/modify"
             element={userToken ? <ModifySite /> : <Unauthorized />}
           />
           <Route
-            path="/sites/modify/:siteId"
+            path="/admin/sites/modify/:siteId"
             element={userToken ? <ModifySiteId /> : <Unauthorized />}
           />
           <Route
-            path="/sites/delete"
+            path="/admin/sites/delete"
             element={userToken ? <DeleteSite /> : <Unauthorized />}
+          />
+          <Route
+            path="/admin/activities/create"
+            element={userToken ? <CreateActivity /> : <Unauthorized />}
+          />
+          <Route
+            path="/admin/activities/add"
+            element={userToken ? <AddActivity /> : <Unauthorized />}
+          />
+          <Route
+            path="/admin/activities/delete"
+            element={userToken ? <DeleteActivity /> : <Unauthorized />}
           />
         </Routes>
       </AdminContext.Provider>

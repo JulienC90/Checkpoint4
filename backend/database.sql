@@ -61,12 +61,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`site_has_activity` (
   CONSTRAINT `fk_site_has_activity_site`
     FOREIGN KEY (`site_id`)
     REFERENCES `mydb`.`site` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_site_has_activity_activity1`
     FOREIGN KEY (`activity_id`)
     REFERENCES `mydb`.`activity` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 

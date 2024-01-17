@@ -17,28 +17,21 @@ export default function Admin() {
   return (
     <div className="admin-page">
       <h1>Bienvenue</h1>
-      <p>Que souhaitez-vous faire ? </p>
+      <h3>Que souhaitez-vous faire ? </h3>
       <div className="btn-col">
         <button
           type="button"
           className="btn"
-          onClick={() => navigate("/sites/add")}
+          onClick={() => navigate("/admin/sites")}
         >
-          Ajouter un site
+          Gérer les sites
         </button>
         <button
           type="button"
           className="btn"
-          onClick={() => navigate("/sites/modify")}
+          onClick={() => navigate("/admin/activities")}
         >
-          Modifier un site
-        </button>
-        <button
-          type="button"
-          className="btn"
-          onClick={() => navigate("/sites/delete")}
-        >
-          Supprimer un site
+          Gérer les activités
         </button>
         <button type="button" className="back" onClick={handleLogout}>
           Déconnexion
